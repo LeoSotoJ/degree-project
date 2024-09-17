@@ -1,0 +1,365 @@
+\begin{thebibliography}{10}
+
+\bibitem{Landrigan2018}
+Philip~J Landrigan, Richard Fuller, Nereus J~R Acosta, Olusoji Adeyi, and et.
+  al.
+\newblock The lancet commission on pollution and health.
+\newblock {\em The Lancet}, 391(10119):462--512, February 2018.
+
+\bibitem{ECHA}
+{European Chemicals Agency}.
+\newblock Registered substances - european chemicals agency.
+\newblock Website:
+  https://echa.europa.eu/information-on-chemicals/registered-substances/.
+
+\bibitem{Escher2020}
+Beate~I. Escher, Heather~M. Stapleton, and Emma~L. Schymanski.
+\newblock Tracking complex mixtures of chemicals in our changing environment.
+\newblock {\em Science}, 367(6476):388--392, 2020.
+
+\bibitem{Ebele2017}
+Anekwe~Jennifer Ebele, Mohamed Abou-Elwafa Abdallah, and Stuart Harrad.
+\newblock Pharmaceuticals and personal care products ({PPCPs}) in the
+  freshwater aquatic environment.
+\newblock {\em Emerging Contaminants}, 3(1):1--16, March 2017.
+
+\bibitem{Sill2020}
+Fenna Sill{\'{e}}.
+\newblock The exposome {\textendash} a new approach for risk assessment.
+\newblock {\em {ALTEX}}, pages 3--23, 2020.
+
+\bibitem{Krewski2010}
+Daniel Krewski, Daniel Acosta, Melvin Andersen, Henry Anderson, John~C. Bailar,
+  Kim Boekelheide, Robert Brent, Gail Charnley, Vivian~G. Cheung, Sidney Green,
+  Karl~T. Kelsey, Nancy~I. Kerkvliet, Abby~A. Li, Lawrence McCray, Otto Meyer,
+  Reid~D. Patterson, William Pennie, Robert~A. Scala, Gina~M. Solomon, Martin
+  Stephens, James Yager, Lauren Zeise, and Staff of~Committee~on Toxicity~Test.
+\newblock Toxicity testing in the 21st century: A vision and a strategy.
+\newblock {\em Journal of Toxicology and Environmental Health, Part B},
+  13(2-4):51--138, June 2010.
+
+\bibitem{Richardson2011}
+Susan~D. Richardson.
+\newblock Environmental mass spectrometry: Emerging contaminants and current
+  issues.
+\newblock {\em Analytical Chemistry}, 84(2):747--778, December 2011.
+
+\bibitem{rager_linking_2016}
+Julia~E. Rager, Mark~J. Strynar, Shuang Liang, Rebecca~L. McMahen, Ann~M.
+  Richard, Christopher~M. Grulke, John~F. Wambaugh, Kristin~K. Isaacs, Richard
+  Judson, Antony~J. Williams, and Jon~R. Sobus.
+\newblock Linking high resolution mass spectrometry data with exposure and
+  toxicity forecasts to advance high-throughput environmental monitoring.
+\newblock {\em Environment International}, 88:269--280, March 2016.
+
+\bibitem{Horai2010}
+Hisayuki Horai, Masanori Arita, Shigehiko Kanaya, Yoshito Nihei, and et.al.
+\newblock {MassBank}: a public repository for sharing mass spectral data for
+  life sciences.
+\newblock {\em Journal of Mass Spectrometry}, 45(7):703--714, July 2010.
+
+\bibitem{mona_website}
+{MoNA} - massbank of north america.
+\newblock Online: https://mona.fiehnlab.ucdavis.edu/.
+
+\bibitem{Wishart2017}
+David~S Wishart, Yannick~Djoumbou Feunang, Ana Marcu, An~Chi Guo, and et. al.
+\newblock {HMDB} 4.0: the human metabolome database for 2018.
+\newblock {\em Nucleic Acids Research}, 46(D1):D608--D617, November 2017.
+
+\bibitem{Wang2016}
+Mingxun Wang, Jeremy~J Carver, Vanessa~V Phelan, Laura~M Sanchez, and et. al.
+\newblock Sharing and community curation of mass spectrometry data with global
+  natural products social molecular networking.
+\newblock {\em Nature Biotechnology}, 34(8):828--837, August 2016.
+
+\bibitem{Zushi2022}
+Yasuyuki Zushi.
+\newblock Direct prediction of physicochemical properties and toxicities of
+  chemicals from analytical descriptors by {GC}{\textendash}{MS}.
+\newblock {\em Analytical Chemistry}, 94(25):9149--9157, June 2022.
+
+\bibitem{peets_MS2tox_2022}
+Pilleriin Peets, Wei-Chieh Wang, Matthew MacLeod, Magnus Breitholtz,
+  Jonathan~W. Martin, and Anneli Kruve.
+\newblock {MS2Tox} {Machine} {Learning} {Tool} for {Predicting} the
+  {Ecotoxicity} of {Unidentified} {Chemicals} in {Water} by {Nontarget}
+  {LC}-{HRMS}.
+\newblock {\em Environ. Sci. Technol.}, 56(22):15508--15517, November 2022.
+
+\bibitem{Grandjean2014}
+Philippe Grandjean and Philip~J Landrigan.
+\newblock Neurobehavioural effects of developmental toxicity.
+\newblock {\em The Lancet Neurology}, 13(3):330--338, March 2014.
+
+\bibitem{Vandenberg2016}
+Laura~N. Vandenberg, Marlene {\AA}gerstrand, Anna Beronius, Claire Beausoleil,
+  and et. al.
+\newblock A proposed framework for the systematic review and integrated
+  assessment ({SYRINA}) of endocrine disrupting chemicals.
+\newblock {\em Environmental Health}, 15(1), July 2016.
+
+\bibitem{unterthiner2015toxicity}
+Thomas Unterthiner, Andreas Mayr, Günter Klambauer, and Sepp Hochreiter.
+\newblock Toxicity prediction using deep learning, 2015.
+
+\bibitem{mayr_deeptox_2016}
+Andreas Mayr, Günter Klambauer, Thomas Unterthiner, and Sepp Hochreiter.
+\newblock {DeepTox}: {Toxicity} {Prediction} using {Deep} {Learning}.
+\newblock {\em Front. Environ. Sci.}, 3, February 2016.
+
+\bibitem{Idakwo2018}
+Gabriel Idakwo, Joseph Luttrell, Minjun Chen, Huixiao Hong, Zhaoxian Zhou, Ping
+  Gong, and Chaoyang Zhang.
+\newblock A review on machine learning methods for in silico toxicity
+  prediction.
+\newblock {\em Journal of Environmental Science and Health, Part C},
+  36(4):169--191, October 2018.
+
+\bibitem{Paini2019}
+A.~Paini, J.A. Leonard, E.~Joossens, J.G.M. Bessems, and et. al.
+\newblock Next generation physiologically based kinetic ({NG}-{PBK}) models in
+  support of regulatory decision making.
+\newblock {\em Computational Toxicology}, 9:61--72, February 2019.
+
+\bibitem{Ciallella2019}
+Heather~L. Ciallella and Hao Zhu.
+\newblock Advancing computational toxicology in the big data era by artificial
+  intelligence: Data-driven and mechanism-driven modeling for chemical
+  toxicity.
+\newblock {\em Chemical Research in Toxicology}, 32(4):536--547, March 2019.
+
+\bibitem{Zhu_2016}
+Hao Zhu, Mounir Bouhifd, Elizabeth Donley, Laura Egnash, Nicole Kleinstreuer,
+  E.~Dinant Kroese, Zhichao Liu, Thomas Luechtefeld, Jessica Palmer, David
+  Pamies, Jie Shen, Volker Strauss, Shengde Wu, and Thomas Hartung.
+\newblock Supporting read-across using biological data.
+\newblock {\em ALTEX - Alternatives to animal experimentation},
+  33(2):167–182, May 2016.
+
+\bibitem{OECD_read_across}
+OECD.
+\newblock {\em Guidance on Grouping of Chemicals, Second Edition}.
+\newblock 2017.
+
+\bibitem{Luechtefeld2015}
+Thomas Luechtefeld, Alexandra Maertens, James~M. McKim, Thomas Hartung, Andre
+  Kleensang, and Vanessa S{\'{a}}-Rocha.
+\newblock Probabilistic hazard assessment for skin sensitization potency by
+  dose-response modeling using feature elimination instead of quantitative
+  structure-activity relationships.
+\newblock {\em Journal of Applied Toxicology}, 35(11):1361--1371, June 2015.
+
+\bibitem{Huang2017}
+Ruili Huang and Menghang Xia.
+\newblock Editorial: Tox21 challenge to build predictive models of nuclear
+  receptor and stress response pathways as mediated by exposure to
+  environmental toxicants and drugs.
+\newblock {\em Frontiers in Environmental Science}, 5, January 2017.
+
+\bibitem{Yang2020}
+Yi~Yang, Xiaohui Liu, Chengpin Shen, Yu~Lin, Pengyuan Yang, and Liang Qiao.
+\newblock In silico spectral libraries by deep learning facilitate
+  data-independent acquisition proteomics.
+\newblock {\em Nature Communications}, 11(1), January 2020.
+
+\bibitem{Wang2020}
+Mingxun Wang, Alan~K. Jarmusch, Fernando Vargas, Alexander~A. Aksenov, and
+  et.al.
+\newblock Mass spectrometry searches using {MASST}.
+\newblock {\em Nature Biotechnology}, 38(1):23--26, January 2020.
+
+\bibitem{Dhrkop2020}
+Kai D\"{u}hrkop, Louis-F{\'{e}}lix Nothias, Markus Fleischauer, Raphael Reher,
+  Marcus Ludwig, Martin~A. Hoffmann, Daniel Petras, William~H. Gerwick, Juho
+  Rousu, Pieter~C. Dorrestein, and Sebastian B\"{o}cker.
+\newblock Systematic classification of unknown metabolites using
+  high-resolution fragmentation mass spectra.
+\newblock {\em Nature Biotechnology}, 39(4):462--471, November 2020.
+
+\bibitem{huber_MS2deepscore_2021}
+Florian Huber, Sven van~der Burg, Justin J.~J. van~der Hooft, and Lars Ridder.
+\newblock {MS2DeepScore}: a novel deep learning similarity measure to compare
+  tandem mass spectra.
+\newblock {\em J Cheminform}, 13(1):84, December 2021.
+
+\bibitem{deJonge2023}
+Niek~F. de~Jonge, Joris J.~R. Louwen, Elena Chekmeneva, Stephane Camuzeaux,
+  Femke~J. Vermeir, Robert~S. Jansen, Florian Huber, and Justin J.~J. van~der
+  Hooft.
+\newblock {MS}2query: reliable and scalable {MS}2 mass spectra-based analogue
+  search.
+\newblock {\em Nature Communications}, 14(1), March 2023.
+
+\bibitem{Djukovic2020}
+Danijel Djukovic, Daniel Raftery, and Nagana Gowda.
+\newblock Mass spectrometry and {NMR} spectroscopy based quantitative
+  metabolomics.
+\newblock In {\em Proteomic and Metabolomic Approaches to Biomarker Discovery},
+  pages 289--311. Elsevier, 2020.
+
+\bibitem{amara_networks_2022}
+Adam Amara, Clément Frainay, Fabien Jourdan, Thomas Naake, Steffen Neumann,
+  Elva~María Novoa-del Toro, Reza~M Salek, Liesa Salzer, Sarah Scharfenberg,
+  and Michael Witting.
+\newblock Networks and {Graphs} {Discovery} in {Metabolomics} {Data} {Analysis}
+  and {Interpretation}.
+\newblock {\em Front. Mol. Biosci.}, 9:841373, March 2022.
+
+\bibitem{Cai2023}
+Yuping Cai, Zhiwei Zhou, and Zheng-Jiang Zhu.
+\newblock Advanced analytical and informatic strategies for metabolite
+  annotation in untargeted metabolomics.
+\newblock {\em {TrAC} Trends in Analytical Chemistry}, 158:116903, January
+  2023.
+
+\bibitem{Tang2022}
+Caiming Tang, Guangshi Chen, Bin Jiang, Jianhua Tan, Yutao Liang, Hui Lin,
+  Yanhong Zeng, Xiaojun Luo, Bixian Mai, and Xianzhi Peng.
+\newblock High-performance nontarget analysis of halogenated organic compounds
+  in tap water, fly ash, soil and sediment using ultrahigh resolution mass
+  spectrometry and scripting approaches based on cl/br-specific search
+  algorithms.
+\newblock {\em Analytica Chimica Acta}, 1204:339618, April 2022.
+
+\bibitem{Lestremau2023}
+Francois Lestremau, Alexandre Levesque, Abdelmoughit Lahssini, Tanguy~Magnan
+  de~Bornier, Romain Laurans, Azziz Assoumani, and Hugues Biaudet.
+\newblock Development and implementation of automated qualification processes
+  for the identification of pollutants in an aquatic environment from
+  high-resolution mass spectrometric nontarget screening data.
+\newblock {\em ACS}, 3(3):765--772, February 2023.
+
+\bibitem{naake_metcirc_2017}
+Thomas Naake and Emmanuel Gaquerel.
+\newblock {MetCirc}: navigating mass spectral similarity in high-resolution
+  {MS}/{MS} metabolomics data.
+\newblock {\em Bioinformatics}, 33(15):2419--2420, August 2017.
+
+\bibitem{bittremieux_comparison_2022}
+Wout Bittremieux, Robin Schmid, Florian Huber, Justin~JJ van~der Hooft, Mingxun
+  Wang, and Pieter~C Dorrestein.
+\newblock Comparison of {Cosine}, {Modified} {Cosine}, and {Neutral} {Loss}
+  {Based} {Spectrum} {Alignment} {For} {Discovery} of {Structurally} {Related}
+  {Molecules}.
+\newblock preprint, Bioinformatics, June 2022.
+
+\bibitem{bittremieux_learned_2018}
+Wout Bittremieux, Damon~H. May, Jeffrey Bilmes, and William~Stafford Noble.
+\newblock A learned embedding for efficient joint analysis of millions of mass
+  spectra.
+\newblock preprint, Bioinformatics, November 2018.
+
+\bibitem{qin_deep_2021}
+Chunyuan Qin, Xiyang Luo, Chuan Deng, Kunxian Shu, Weimin Zhu, Johannes Griss,
+  Henning Hermjakob, Mingze Bai, and Yasset Perez-Riverol.
+\newblock Deep learning embedder method and tool for mass spectra similarity
+  search.
+\newblock {\em Journal of Proteomics}, 232:104070, February 2021.
+
+\bibitem{zushi_direct_2022}
+Yasuyuki Zushi.
+\newblock Direct {Prediction} of {Physicochemical} {Properties} and
+  {Toxicities} of {Chemicals} from {Analytical} {Descriptors} by {GC}–{MS}.
+\newblock {\em Anal. Chem.}, 94(25):9149--9157, June 2022.
+
+\bibitem{Frank2007}
+Ari~M. Frank, Nuno Bandeira, Zhouxin Shen, Stephen Tanner, Steven~P. Briggs,
+  Richard~D. Smith, and Pavel~A. Pevzner.
+\newblock Clustering millions of tandem mass spectra.
+\newblock {\em Journal of Proteome Research}, 7(1):113--122, December 2007.
+
+\bibitem{wang_sharing_2016}
+Mingxun Wang, Jeremy~J Carver, Vanessa~V Phelan, Laura~M Sanchez, and et. al.
+\newblock Sharing and community curation of mass spectrometry data with
+  {Global} {Natural} {Products} {Social} {Molecular} {Networking}.
+\newblock {\em Nat Biotechnol}, 34(8):828--837, August 2016.
+
+\bibitem{PerezDeSouza2020}
+Leonardo Perez~De Souza, Saleh Alseekh, Yariv Brotman, and Alisdair~R Fernie.
+\newblock Network-based strategies in metabolomics data analysis and
+  interpretation: from molecular networking to biological interpretation.
+\newblock {\em Expert Review of Proteomics}, 17(4):243--255, April 2020.
+
+\bibitem{Oberleitner2021}
+Daniela Oberleitner, Robin Schmid, Wolfgang Schulz, Axel Bergmann, and
+  Christine Achten.
+\newblock Feature-based molecular networking for identification of organic
+  micropollutants including metabolites by non-target analysis applied to
+  riverbank filtration.
+\newblock {\em Analytical and Bioanalytical Chemistry}, 413(21):5291--5300,
+  July 2021.
+
+\bibitem{Wu2023}
+Gang Wu, Xuebing Wang, Xuxiang Zhang, Hongqiang Ren, Yanru Wang, Qingmiao Yu,
+  Si~Wei, and Jinju Geng.
+\newblock Nontarget screening based on molecular networking strategy to
+  identify transformation products of citalopram and sertraline in wastewater.
+\newblock {\em Water Research}, 232:119509, April 2023.
+
+\bibitem{Huang2016}
+Ruili Huang, Menghang Xia, Dac-Trung Nguyen, Tongan Zhao, Srilatha Sakamuru,
+  Jinghua Zhao, Sampada~A. Shahane, Anna Rossoshek, and Anton Simeonov.
+\newblock Tox21challenge to build predictive models of nuclear receptor and
+  stress response pathways as mediated by exposure to environmental chemicals
+  and drugs.
+\newblock {\em Frontiers in Environmental Science}, 3, January 2016.
+
+\bibitem{MassBank}
+{MassBank} - a public repository of reference spectra for identification of
+  chemical compounds.
+\newblock \url{https://massbank.eu/MassBank/}.
+\newblock Accessed in February 2023.
+
+\bibitem{huber2020matchms}
+Florian Huber, Stefan Verhoeven, Christiaan Meijer, Hanno Spreeuw, Efra{\'\i}n
+  Manuel~Villanueva Castilla, Cunliang Geng, Justin~JJ van~der Hooft, Simon
+  Rogers, Adam Belloum, Faruk Diblen, et~al.
+\newblock matchms-processing and similarity evaluation of mass spectrometry
+  data.
+\newblock {\em bioRxiv}, pages 2020--08, 2020.
+
+\bibitem{DjoumbouFeunang2016}
+Yannick~Djoumbou Feunang, Roman Eisner, Craig Knox, Leonid Chepelev, Janna
+  Hastings, Gareth Owen, Eoin Fahy, Christoph Steinbeck, Shankar Subramanian,
+  Evan Bolton, Russell Greiner, and David~S. Wishart.
+\newblock Classyfire: automated chemical classification with a comprehensive,
+  computable taxonomy.
+\newblock {\em Journal of Cheminformatics}, 8(1), November 2016.
+
+\bibitem{SANDVIG2000415}
+K.~Sandvig, S.~Grimmer, T.G. Iversen, K.~Rodal, M.L. Torgersen, P.~Nicoziani,
+  and B.~{van Deurs}.
+\newblock Ricin transport into cells: studies of endocytosis and intracellular
+  transport.
+\newblock {\em International Journal of Medical Microbiology}, 290(4):415--420,
+  2000.
+
+\bibitem{Gao2005}
+Wenqing Gao, Casey~E. Bohl, and James~T. Dalton.
+\newblock Chemistry and structural biology of androgen receptor.
+\newblock {\em Chemical Reviews}, 105(9):3352--3370, August 2005.
+
+\bibitem{Meanwell2014}
+Nicholas~A. Meanwell.
+\newblock Erratum to: The influence of bioisosteres in drug design: Tactical
+  applications to address developability problems.
+\newblock In {\em Topics in Medicinal Chemistry}, pages 389--390. Springer
+  Berlin Heidelberg, 2014.
+
+\bibitem{Svirev2022}
+Milo{\v{s}} Svir{\v{c}}ev, Mirjana Popsavin, Aleksandar Pavi{\'{c}}, Branka
+  Vasiljevi{\'{c}}, Marko~V. Rodi{\'{c}}, Sanja Djoki{\'{c}}, Jelena
+  Kesi{\'{c}}, Bojana~Sre{\'{c}}o Zelenovi{\'{c}}, Velimir Popsavin, and Vesna
+  Koji{\'{c}}.
+\newblock Design, synthesis, and biological evaluation of thiazole bioisosteres
+  of goniofufurone through in vitro antiproliferative activity and in vivo
+  toxicity.
+\newblock {\em Bioorganic Chemistry}, 121:105691, April 2022.
+
+\bibitem{FABRO1967}
+S.~FABRO, R.~L. SMITH, and R.~T. WILLIAMS.
+\newblock Toxicity and teratogenicity of optical isomers of thalidomide.
+\newblock {\em Nature}, 215(5098):296--296, July 1967.
+
+\end{thebibliography}

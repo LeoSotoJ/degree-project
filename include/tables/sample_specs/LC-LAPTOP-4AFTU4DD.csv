@@ -1,0 +1,11 @@
+Parameter;Description
+LC system;Dionex UltimateTM 3000 UHPLC (Thermo Fischer Scientific, USA)
+Column;Kinetex (Phenomenex, Germany)
+;C18 reversed phase, 150 x 3.0 mm, 2.6 um
+Column temperature;40 °C
+Mobile phase;Solution A: 0.1% formic acid in HPLC grade water
+;Solution B: 0.1% formic acid in acetonitrile:water (95:5)
+Gradient;Linear increase of 5% B to 100% B with 20.0 min
+;Held for 5 min
+;Lowered back to 5% B with 0.1 min
+Equilibration time between injections;4.9 min

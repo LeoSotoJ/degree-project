@@ -1,0 +1,8 @@
+\thispagestyle{plain}			% Supress header 
+\setlength{\parskip}{0pt plus 1.0pt}
+\phantomsection
+\section*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+
+
+The widespread exposure to chemicals has raised concerns about their toxicity impact on public health and the environment. Identifying and quantifying these chemicals in complex samples is not always possible, making the assessment of their toxicities difficult. In an effort to quickly screen chemicals for potential risks to human health, this study aims to predict toxicities based on tandem mass spectrometry \tMS{} data. To achieve this goal, endocrine-disrupting activity data and other relevant human endpoints from the Tox21 Challenge were collected and combined with mass spectra from Mass Bank Europe. A \textit{k}-nearest neighbors (\textit{k}-NN) and a spectra network-based algorithm were implemented to predict the activity from \tMS{} mass spectra. For \textit{k}-NN, 5-fold cross-validation, the highest recall and precision were 47.1\% and 44.4\% (both for NR.AR), respectively. The implementation of a spectral similarity network enhanced the overall prediction power, leading to recall and precision of 81.8 \% and 75.0\% (both for NR.AR), respectively. The spectral networks showed clustering tendencies for the endpoints NR.AR, NR.ER, NR.AR.LBD, and NR.ER.LBD. The approach was applied to retrospective analysis of \tMS{} mass spectra of a wastewater sample, showing potential for toxicity alerts. To refine the predictive capabilities of the model, further investigations should focus on feature selection techniques, network optimization, and integration with other domain datasets.

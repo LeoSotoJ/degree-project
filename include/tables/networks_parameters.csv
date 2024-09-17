@@ -1,0 +1,14 @@
+﻿Description,Cosine,MS2DeepScore
+Minimum score,0.6,0.85
+Max connections from node,10,10
+Number of nodes,363,475
+Number of edges,409,745
+Avg. number of neighbors,6.043,8.898
+Network diameter,7,7
+Network radius,4,4
+Characteristic path length,2.970,2.807
+Clustering coefficient,0.452,0.576
+Network density,0.131,0.185
+Network heterogeneity,0.683,0.548
+Network centralization,0.226,0.198
+Connected components,105,108

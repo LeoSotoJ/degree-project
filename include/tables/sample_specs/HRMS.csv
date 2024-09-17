@@ -1,0 +1,13 @@
+﻿Parameter;Description
+HRMS system;Q Exactive Orbitrap (Thermo Fisher Scientific, USA) 
+;with electrospray ionization (ESI)
+Ionization mode;Positive
+Acquisition mode;DDA and DIA
+Collision energy;20 V and 70 V
+Resolution;30000
+ESI spray voltage;3.5 kV
+Capillary temperature;320 °C
+Maximum spray current;100 uA
+S-lens RF level;50%
+Gas;50 arbitrary units (AU) for the sheath gas
+;3.0 AU for aux gas and 0.0 AU for spare gas

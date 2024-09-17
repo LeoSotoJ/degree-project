@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2022/dev/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: unsrt.bst
+Database file #1: include/back/references.bib
+Warning--empty publisher in OECD_read_across
+You've used 54 entries,
+            1791 wiz_defined-function locations,
+            802 strings with 17407 characters,
+and the built_in function-call counts, 14422 in all, are:
+= -- 1135
+> -- 987
+< -- 4
++ -- 350
+- -- 296
+* -- 1302
+:= -- 2425
+add.period$ -- 162
+call.type$ -- 54
+change.case$ -- 55
+chr.to.int$ -- 0
+cite$ -- 55
+duplicate$ -- 500
+empty$ -- 1205
+format.name$ -- 296
+if$ -- 3016
+int.to.chr$ -- 0
+int.to.str$ -- 54
+missing$ -- 49
+newline$ -- 271
+num.names$ -- 52
+pop$ -- 99
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 216
+stack$ -- 0
+substring$ -- 980
+swap$ -- 86
+text.length$ -- 4
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 1
+while$ -- 126
+width$ -- 56
+write$ -- 585
+(There was 1 warning)

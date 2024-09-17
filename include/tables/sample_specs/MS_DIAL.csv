@@ -1,0 +1,42 @@
+﻿Parameter;Description
+Data collection;
+MS1 tolerance;0.001 Da
+MS2 tolerance;0.003 Da
+RT begin;2 min
+RT end;25 min
+MS1 mass range begin;90 Da
+MS1 mass range end;1050 Da
+MS/MS mass range begin;90 Da
+MS/MS mass range end;1050 Da
+Maximum charged number;2
+Consider Cl and Br elements;Yes
+;
+Peak detection;
+Min peak height;10000 amplitude
+Mass slice width;0.07 Da
+Smoothing method;Linear weighted moving average
+Smoothing level;5 scan
+Min peak width;8 scan
+;
+MS2Dec;
+Sigma window value;1
+MS/MS abundance cut off;0 amplitude
+Exclude after precursor ion;Yes
+Keep the isotopic ions until;5 Da
+Keep the isotopic ions w/o MS2Dec;Yes
+;
+Adduct;
+Positive ionization mode;[M+H]+, [M+Na]+, [M+NH4]+
+;
+Alignment;
+RT tolerance;0.75 min
+MS1 tolerance;0.003 Da
+RT factor;0.5
+MS1 factor;0.5
+N% detected in at least one group;100%
+Remove features based on blank information;Sample max/blank average
+Fold change;5
+Keep ref.matched features;Yes
+Keep suggested w/o MS2 features;No
+Keep removable features and assign the tag;Yes
+Gap filling by compulsion;Yes

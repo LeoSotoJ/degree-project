@@ -1,0 +1,98 @@
+\chapter{Background}
+
+\subsection*{Toxicity prediction}
+
+Computational models and data analysis techniques can be used to predict the toxicity of chemicals based on their structural properties, activity profiles, and other relevant factors. Some approaches include \ac{QSAR} models and machine learning algorithms. These models use data on chemical structures, biological activity, physicochemical properties, and toxicological endpoints to establish relationships and make predictions about the potential toxicity of new or untested chemicals.
+
+QSAR models, for example, employ statistical and mathematical techniques to correlate chemical descriptors (molecular features) with toxicological data. They assume that chemicals with similar structural and physicochemical properties are likely to exhibit similar toxicological effects. Machine learning algorithms, on the other hand, learn patterns and relationships from training data to make predictions on new, unseen chemicals. These algorithms can handle large datasets and capture complex relationships between chemical features and toxicity. Also deep learning techniques, such as neural networks, have shown promise in capturing intricate patterns in chemical data and achieving high predictive performance \cite{unterthiner2015toxicity}\cite{mayr_deeptox_2016}.
+
+Despite these advancements, challenges remain in toxicity prediction. Some major challenges are the availability and quality of comprehensive toxicity data \cite{Idakwo2018} and the multi-factorial nature of toxicity that involves interactions between the chemical, biological systems, and environmental factors. Capturing the complex relationships and underlying mechanisms challenges predictions. Furthermore, incorporation of toxicity prediction methods into regulatory frameworks is an ongoing process \cite{Paini2019}\cite{Ciallella2019} that requires interpretability, and regulatory relevance for their adoption.
+
+Recently, there is a growing focus on the integration of diverse data sources, such as omics data (genomics, proteomics, metabolomics) and high-throughput screening data, to enhance the prediction of toxicity \cite{Zhu_2016}. This multi-dimensional data integration and systems biology can potentially provide a more comprehensive understanding of the molecular mechanisms of toxicity and enable the development of more holistic predictive models.
+
+\subsection*{Read-Across}
+
+Testing all the universe of chemicals for toxicity is not feasible. In some cases, there is sufficient evidence to infer toxicity. Read-across is a gap filling technique used for the prediction of toxicity of chemicals based on the available toxicity data of related compounds. This relation might be based on similar structure, properties and/or activities \cite{OECD_read_across}. It leverages the principle that chemicals with similar structural features are likely to exhibit similar biological activities or toxicological properties. In read-across, known toxicity information of a reference compound is extrapolated or ``read across" to predict the toxicity of a target compound with similar chemical structure but without available experimental data. 
+
+Read-across offers a cost-effective and time-efficient strategy for toxicity prediction, especially when experimental data for a large number of chemicals is limited or unavailable. However, it is important to consider the reliability and relevance of the predictions as in some cases structural similarity alone may not be sufficient to conglomerate chemicals with the same potency \cite{Luechtefeld2015}.
+
+\subsection*{Tox21 Challenge}
+
+The Tox21 Challenge was launched in 2014 to advance the toxicology prediction methods. This challenge is a collaborative research initiative aimed at advancing toxicology testing methods and predicting the potential toxicity of chemical compounds using high-throughput screening approaches. The challenge involves the evaluation of around ten thousand chemicals for their response of twelve toxicity endpoints for the panels of nuclear receptor (NR) and stress response (SR) pathways. All the endpoints are summarized in Table \ref{table:tox21_endpoints}. Research teams develop and apply computational models, such as machine learning algorithms, to predict the activity of these chemicals on various toxicity endpoints. The high-performing models achieved prediction accuracies comparable to experimental errors, highlighting the potential of these models as screening tools for chemical prioritization \cite{Huang2017}. The Tox21 Challenge serves as a platform for the development and validation of innovative computational methods for toxicity prediction.
+
+\begin{table}[htbp]
+\centering
+\footnotesize
+\caption{Endpoints of the Tox21 Challenge}
+\label{table:tox21_endpoints}
+\begin{tabular}{l l p{6cm}}
+\hline
+Panel & Abbreviation & Description \\
+\hline
+\multirow{6}{*}{Nuclear Receptor} & NR.AhR & Activation of the aryl hydrocarbon receptor \\
+%\cline{2-3}  
+& NR.AR & Activation of the androgen receptor \\
+& NR.AR.LBD & Binding to the ligand-binding domain of the androgen receptor \\
+& NR.Aromatase & Inhibition of aromatase activity \\
+& NR.ER & Activation of the estrogen receptor \\
+& NR.ER.LBD & Binding to the ligand-binding domain of the estrogen receptor \\
+& NR.PPAR.gamma & Peroxisome Proliferator-Activated Receptor Gamma  \\
+\hline
+\multirow{6}{*}{Stress Response} & SR.ARE & Activation of the antioxidant response element \\
+& SR.ATAD5 & Inhibition of ATPase family AAA domain-containing protein 5 \\
+& SR.HSE & Activation of the heat shock response element \\
+& SR.MMP & Changing the Mitochondrial Membrane Potential \\
+& SR.p53 & Activation of the p53 tumor suppressor pathway \\
+\hline
+\end{tabular}
+\end{table}
+
+
+
+\subsection*{Tandem mass spectra}
+
+Tandem mass spectrometry (\tMS{}) can provide insights into the structural information of unknown compounds in a sample by analyzing their fragmentation patterns. The annotation process consists of comparing the experimental \tMS{} spectra with reference databases or spectral libraries. Spectral matches are based on the similarity of the fragmentation patterns by examining the mass-to-charge ratios and relative intensities of the fragment ions.  
+
+Some of challenges in annotation rely on the spectra complexity and the data availability. For example, the presence of adducts, isotopic effects, and other sources of fragmentation can make it difficult to confidently assign a specific molecular formula or compound to a feature. Even with the availability of databases and spectral matching algorithms, accurate annotation can still be challenging, especially for compounds that have not been well-characterized or are not present in the databases. This is the case of the analysis of complex mixtures such as environmental samples or biological fluids. These samples often contain numerous compounds with varying levels of abundance and structural diversity. In such cases, the presence of overlapping peaks and co-elution of compounds can further complicate the annotation process, making it difficult to distinguish and assign individual features to specific compounds.
+
+To improve the accuracy of feature annotation in \tMS{} analysis, efforts are being made to enhance spectral libraries \cite{Yang2020}\cite{Wang2020}, assign classes \cite{Dhrkop2020}, develop better algorithms for spectral matching \cite{huber_MS2deepscore_2021}\cite{deJonge2023}, and integrate complementary information from other analytical techniques \cite{Djukovic2020}.  Recent approaches involves the utilization of multi-layer networks \cite{amara_networks_2022}, which aim to incorporate knowledge-based networks into mass spectra networks. This integration enhances the annotation and understanding of chemicals within their context, such as metabolic pathways. These advancements aim to overcome the challenges associated with feature annotation in tandem mass spectrometry and enable more reliable and comprehensive compound identification in complex samples. However, it is not always possible to fully annotate all the mass spectra and only a comparison can be made base on their similarity.
+
+
+\subsection*{Similarity scores}
+
+The similarity between mass spectra is the degree to which two or more mass spectra are alike. This is achieved by comparing the patterns and intensities of peaks in the spectra, the presence or absence ions or neutral losses. Some similarity metrics for mass spectra include cosine similarity, modified cosine similarity, and neutral loss similarity. 
+
+Similarity scores play an crucial role for library matching and allow the annotation of small molecules in MS studies, e.g., metabolomics \cite{Cai2023}, environment \cite{Tang2022}\cite{Lestremau2023}.  Several approaches to similarity can be found in literature. Some common similarity measures are cosine \cite{naake_metcirc_2017}, modified cosine, and neutral loss \cite{bittremieux_comparison_2022}.
+
+The cosine similarity measures the cosine of the angle between two vectors and provides a similarity score ranging from -1 to 1. The cosine similarity, $\cos(\theta)$, is shown in Equation \eqref{eq:cosine_similarity}, where $\mathbf{A}$ and $\mathbf{B}$ represent the vectors corresponding to two spectra forming a $\theta$ angle.
+
+\begin{align}
+\cos(\theta)=\frac{{\mathbf{A} \cdot \mathbf{B}}}{{\|\mathbf{A}\| \|\mathbf{B}\|}}
+\label{eq:cosine_similarity}
+\end{align}
+
+Additionally, machine learning approaches have been employed to predict spectral similarities and aid in the annotation process. Neural networks and deep learning approaches have been studied, e.g. GLEAMS \cite{bittremieux_learned_2018}, DLEAMSE \cite{qin_deep_2021}, MS2DeepScore \cite{huber_MS2deepscore_2021}, MS2Query \cite{deJonge2023}. Huber et al. (2021) \cite{huber_MS2deepscore_2021} proposed a Siamese neural network trained with spectra from \ac{GNPS} that outperforms the classical spectral similarity measures, with root mean squared error about 0.15. This score has the potential to be used in library matching and for clustering similar spectra. Combination of scores for the same pairs of spectra and removing outliers for IQR led to an improvement on the Tanimoto score predictions \cite{huber_MS2deepscore_2021}. 
+
+However, some limitations of deep learning approaches include their dependency on training data and the lack of explainability \cite{Idakwo2018}.  Deep learning models typically require extensive datasets for training, and the quality and diversity of the data can greatly impact their effectiveness. Due to their complex architectures and intricate computations, it can also be challenging to understand and interpret the reasoning behind the resulting scores. 
+
+\subsection*{Toxicity prediction from MS data}
+
+Some approaches have been described to predict toxicity from mass spectrometry data for GC-MS and LC-HRMS. GC-MS data benefits from technique standardization, such as common electron ionization (EI) energies and extensive mass spectra libraries. At the same time, collaborative projects, such as GNPS (Wang et al., 2016) \cite{Wang2016}, are now providing a rich source of mass spectra from LC-MS. 
+
+Zushi (2022) \cite{zushi_direct_2022} utilized GC-MS data to predict physicochemical properties and toxicities employing random forest, deep neural networks, and XGBoost-based models. The input variables comprised retention times and mass spectra obtained through electron ionization. The random forest and XGBoost-based models exhibited high accuracy, with root mean square errors (RMSEs) of 1.1 and 0.74, respectively, for log(LD50, mouse, oral) predictions. However, the neural network demonstrated comparatively lower accuracy and could be further optimized to enhance performance. In a different study, Peets et al. (2022) \cite{peets_MS2tox_2022} employed LC-HRMS data to predict lethal concentration (LC50) and effective concentration (EC50) values for fish in static and flow-through exposures and for water flea and algae toxicity. With extreme gradient boosting Dropouts Additive Regression Trees (xgbDART) a promising performance with a root mean square error (RMSE) below 0.89 was achieved.
+
+These efforts showcase the potential and promising opportunities for toxicity prediction. While significant progress has been made, it is important to note that certain endpoints, particularly those related to endocrine activity, have not yet been thoroughly investigated. Exploring these more human-specific endpoints holds tremendous value and contributes to research on the application of mass spectrometry to toxicity prediction.
+
+\subsection*{Spectral similarity networking}
+
+Spectral similarity networking is an approach that allows to cluster mass spectra and find similar structural chemicals \cite{Frank2007} \cite{wang_sharing_2016}. It is an important tool for the study of mass spectra in non-targeted analysis. Several studies have used spectral similarity networking for the annotation of mass spectra in areas including metabolomics \cite{PerezDeSouza2020} and environmental screening \cite{Oberleitner2021}\cite{Wu2023}. Spectral similarity networking shows a great potential for a better understanding of complex samples, and it can also be explored for its application in toxicity prediction from MS data.
+
+In a spectral similarity network, normally the nodes represent mass spectra and the edges the intensity of the similarity. The construction of a network can be influenced by several factors, which includes those described below. Additional attributes can also be depicted in the network, e.g. number of peaks, chemical class.
+
+\textit{Similarity metric:} It quantifies the similarity between different mass spectra to assess the structural similarity or relatedness of compounds. A common metric for this purpose is cosine similarity. Cosine similarity measures the cosine of the angle between two vectors and ranges from -1 to 1.
+
+\textit{Threshold for Minimum Similarity:} It determines the minimum level of similarity required for two spectra to be considered connected in the network. Spectra with cosine similarity scores below this threshold were not included as edges in the network. This threshold helps in controlling the density of the network and ensures that only sufficiently similar spectra are connected.
+
+\textit{Minimum Number of Matched Peaks:} It ensures that there is sufficient overlap in the peaks between spectra to establish a meaningful connection. 
+
+\textit{Maximum Number of Edges from a Node:} This parameter restricts the number of connections from a node, preventing excessive clustering and improving the readability of the network.

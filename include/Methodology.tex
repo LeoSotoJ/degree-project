@@ -1,0 +1,48 @@
+\chapter{Methodology}
+\section*{Data collection and pre-processing}
+\label{section:data_processing}
+
+\subsection*{Toxicity}
+The toxicity dataset was obtained in tabular format from \href{http://bioinf.jku.at/research/DeepTox/tox21.html}{http://bioinf.jku.at/ research/DeepTox/tox21.html}  Mayr et al. (2016) \cite{mayr_deeptox_2016}\cite{Huang2016}. The dataset included 8975 unique InChIKeys for the twelve endpoints of nuclear receptor and stress responses shown in Table \ref{table:tox21_endpoints}. If an endpoint had at least one active label for an InChIKey, the active label was retained. 
+
+\subsection*{\tMS{} spectra}
+Mass spectra were collected from MassBank.eu (Feb 2023, v. 2022.12.1) \cite{MassBank}. The MS framework \textit{matchms} (v.0.18.0) \cite{huber2020matchms} was used for pre-processing the metadata and peaks. The collected mass spectra was filtered for \tMS{}, LC-ESI, [M+H]\textsuperscript{+}, and InChIKeys of the Tox21 dataset. Mass spectra with the same InChIKey were combined into a list of all peaks and intensities, called here as combined spectra. The intensities were normalized, and those below 5\% were removed. Additionally, the intensities were square rooted to increase the importance of low intensity peaks. 
+
+\section*{{\textit{k}-NN} algorithm}
+
+To predict the toxicity labels based solely on the most similar spectra on the entire dataset, a \textit{k}-NN algorithm was evaluated. The results would indicate the closeness of compounds having the same labels. 
+
+The \textit{k}-NN algorithm was tested using \textit{scikit-learn} (v.1.2.0), a module for machine learning. Vector representations of the mass spectra was created with bin width of 0.1 \textit{m/z} from 10 \textit{m/z} to 1000 \textit{m/z}. The mass-to-charge ratio was averaged, and the highest peak intensity of each bin was kept. The dataset was split into train (80\%) and test (20\%) sets with stratified sampling. The stratified split ensured that the train and test sets had roughly similar ratios of active/inactive compounds. Weighted voting was employed to assign labels to the unknown compounds based on the labels of the \textit{k} most similar neighbors. The influence of closer nodes was given more weight than nodes that were further away. The weights were calculated as the inverse of the distance between the unknown compound and its neighbors. The \textit{k}-NN classifier using cosine weights is represented in Equation (\ref{eq:knn}),
+
+\begin{equation}
+\label{eq:knn}
+\hat{y} = \text{{argmax}}\left(\sum_{i=1}^{k}  \frac{1}{1-\cos(\theta)_i} \cdot \mathbf{y}_i\right)
+\end{equation}
+
+where, $\hat{y}$ is the predicted class label, $k$ is the number of nearest neighbors, $\mathbf{y}_i$ is the class label of the $i$th training vector, and $\cos(\theta)_i$ is the cosine similarity score between the input vector and the $i$th training vector.
+
+To determine the number of neighbors, \textit{k}, a 5-fold stratified cross-validation was performed, with recall used as the evaluation metric. Recall measures the proportion of true positive predictions (correctly classified active compounds) out of all actual active compounds, which can be beneficial for the application in toxicological alerts.
+
+The performance of the \textit{k}-NN algorithm was assessed based on its ability to accurately assign endpoint labels to the \tMS{} in the test set.  Considering the objective of correctly identifying positive results and enabling the generation of toxicological alerts, recall was selected as the primary criterion.
+
+\section*{\textit{k}-NN in spectral similarity networks}
+
+\subsection*{Spectral similarity}
+
+Cosine similarity between pairs of combined spectra was computed using \textit{matchms} for a tolerance of 0.1 \textit{m/z}. Each peaks in the combined spectra could be matched only once. Additionally, MS2DeepScore \cite{huber_MS2deepscore_2021}, a deep learning-based score, was calculated and compared with cosine for its ability to form clusters within a network.
+
+\subsection*{Spectral similarity networking}
+
+A spectral network was built based on the cosine similarity between pairs. Mass spectra were represented as nodes, and cosine similarity was represented as edge connecting two nodes. Nodes were included and connected with an edge according to a minimum similarity of 0.6, at least 3 matched peaks (bins), and a maximum of 10 edges from a node. If there were more than 10 similar spectra with a similarity over 0.6 for a node, the additional edges were not included for better readability. The resulting network was loaded to  Cytoscape (v.3.9.1), an open-source software for network visualization. Table \Ref {table:nets_opt} shows the different parameters tested before the selection of a network for further processing. 
+
+\subsection*{Endpoint activity prediction}
+
+To predict the toxicity labels based on the spectral similarity networks a voting scheme of the directly connected nodes was applied. If the number of active neighbors was greater or equal than the inactive ones, then an active label was assigned to the node. Recall and precision were calculated  based on leave-one-out over the entire network as the number of spectra were significant lower than the initial sample.
+
+\section*{Retrospective analysis of wastewater samples}
+
+To test the approach, \tMS{} features from an effluent sample of a wastewater treatment plant in Stockholm were analyzed. The \tMS{} features were obtained and provided by Kruve Lab, Stockholm University. The HRMS analysis of the selected sample was carried out on a Q Exactive Orbitrap (Thermo Fisher Scientific, USA) equiped with \ac{ESI} source in positive mode. The acquisition modes were \ac{DDA} and \ac{DIA}. The collision energies were 20 V and 70 V. The MS data was processed in MS-DIAL (v. 4.80). The mass spectra features were examined using the spectral similarity network. 
+
+\section*{Code and data availability}
+
+The workflow code as a Jupyter Notebook, the network, and mass spectra data are available on the GitHub platform \href{https://github.com/LeoSotoJ/MNTox}{http://https://github.com/LeoSotoJ/MNTox}.

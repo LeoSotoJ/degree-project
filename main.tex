@@ -1,0 +1,54 @@
+\documentclass{mt}
+\begin{document}
+
+\pagenumbering{roman}	
+
+% Title page
+\input{include/front/titlepage}
+
+% Abstract
+\newpage
+\setcounter{page}{2}
+\input{include/front/abstract}
+
+% Popular summary
+\newpage
+\input{include/front/summary}
+
+% Table of contents
+\newpage
+\phantomsection
+\addcontentsline{toc}{chapter}{Contents}
+\tableofcontents
+
+%\cleardoublepage
+% Abbreviations
+\newpage
+\input{include/front/Abbreviations}
+
+%\cleardoublepage
+\newpage
+\setcounter{page}{1}
+\pagenumbering{arabic}
+
+\input{include/Introduction}
+\input{include/Background}
+\input{include/Objectives}
+\input{include/Methodology}
+\input{include/Results}
+\input{include/Discussion}
+\input{include/Conclusions}
+
+% References
+\cleardoublepage
+\input{include/back/References.tex}
+
+% Appendix
+\cleardoublepage
+\input{include/back/Appendix.tex}
+
+\end{document}
+
+
+
+
